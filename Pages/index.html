@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Moments Bakery</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+<link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@100..900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700"
+        rel="stylesheet"
+    >
+
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+</head>
+
+
+<body>
+<script>(function(){try{if(localStorage.getItem("sweetMomentsTheme")==="dark"){document.body.classList.add("dark-mode");}}catch(e){}})();</script>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="main-header">
+
+    <div class="container-custom">
+
+        <div class="header-inner d-flex align-items-center justify-content-between gap-3">
+
+
+            <!-- LOGO -->
+
+            <div class="d-flex align-items-center gap-3">
+
+                <a
+                    href="index.html"
+                    class="d-flex align-items-center gap-3 text-decoration-none"
+                >
+
+                    <img
+                       src="../assets/images/logo.png"
+                        alt="Sweet Moments Bakery Logo"
+                        class="logo-img"
+                    >
+
+                    <span class="logo-text"></span>
+
+                </a>
+
+            </div>
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav class="desktop-nav d-none d-xl-flex align-items-center gap-4">
+
+
+                <!-- HOME DROPDOWN -->
+
+                <div class="dropdown">
+
+                    <a
+                        href="#"
+                        class="dropdown-toggle active label-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        Home
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a
+                                class="dropdown-item"
+                                href="index.html"
+                            >
+                                Home 01
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                class="dropdown-item"
+                                href="index2.html"
+                            >
+                                Home 02
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <a
+                    href="about.html"
+                    class="label-lg"
+                >
+                    About Us
+                </a>
+
+
+                <a
+                    href="products.html"
+                    class="label-lg"
+                >
+                    Products
+
+                
+
+                </a>
+
+
+                <a
+                    href="Custom cake.html"
+                    class="label-lg"
+                >
+                    Custom Orders
+                </a>
+
+
+                <a
+                    href="pricing.html"
+                    class="label-lg"
+                >
+                    Pricing
+                </a>
+
+
+                <a
+                    href="delivery.html"
+                    class="label-lg"
+                >
+                    Delivery
+                </a>
+
+
+
+                <a
+                    href="Contact.html"
+                    class="label-lg"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- HEADER ACTIONS -->
+
+            <div class="d-flex align-items-center gap-2 gap-md-3">
+
+
+                <!-- THEME TOGGLE -->
+
+                <button
+                    type="button"
+                    id="themeToggle"
+                    class="header-icon-btn d-none d-md-flex"
+                    aria-label="Switch to dark mode"
+                    title="Switch to dark mode"
+                >
+
+                    <span
+                        class="material-symbols-outlined"
+                        id="themeIcon"
+                    >
+                        light_mode
+                    </span>
+
+                </button>
+
+
+
+                </button> 
+
+
+                <!-- ORDER NOW -->
+<a href="Custom cake.html" class="card-btn-link">
+                <button
+                    type="button"
+                    class="btn btn-primary-custom rounded-pill px-4 py-2 d-none d-md-block label-lg"
+                >
+                    Order Now
+                </button>
+</a>
+
+              
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    class="navbar-toggler d-xl-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mobileNavigation"
+                    aria-controls="mobileNavigation"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOBILE NAVIGATION -->
+
+        <div
+            class="collapse d-xl-none mobile-menu"
+            id="mobileNavigation"
+        >
+
+            <nav>
+
+                <a
+                    href="index.html"
+                    class="active"
+                >
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="Custom cake.html">
+                    Custom Orders
+                </a>
+
+                <a href="pricing.html">
+                    Pricing
+                </a>
+
+                <a href="delivery.html">
+                    Delivery
+                </a>
+
+                <a href="Contact.html">
+                    Contact
+                </a>
+
+                <button
+                    type="button"
+                    class="btn btn-primary-custom w-100 rounded-pill py-3 mt-2"
+                >
+                    Order Now
+                </button>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main id="home">
+
+
+    <!-- =====================================================
+         HERO
+    ===================================================== -->
+
+    <section class="hero-section">
+
+        <div
+            class="hero-background"
+            style="background-image:url('../assets/images/banner.jpg');"
+        ></div>
+
+
+        <div class="hero-overlay"></div>
+
+
+        <div class="container-custom hero-content">
+
+            <div class="row align-items-center g-5">
+
+
+                <!-- HERO CONTENT -->
+
+                <div class="col-lg-7">
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+
+                        <span class="hero-label-line"></span>
+
+                       
+
+                    </div>
+
+
+                    <h1 class="hero-title mb-4">
+
+                        Freshly Baked
+
+                        <br>
+
+                        <span class="hero-happiness">
+                            Happiness
+                        </span>,
+
+                        <br>
+
+                        Every Day.
+
+                    </h1>
+
+
+                    <p class="body-lg hero-description mt-3">
+
+                        Experience the warmth of artisanal baking. From delicate pastries to magnificent custom cakes, every creation is handcrafted with passion, premium ingredients, and a touch of magic.
+
+                    </p>
+
+
+                    <div class="hero-buttons d-flex flex-wrap align-items-center gap-3 mt-4">
+<a href="custom-cake.html" class="card-btn-link">
+                        <button
+                            type="button"
+                            class="btn btn-primary-custom px-4 px-md-5 py-3 rounded-3 label-lg"
+                        >
+                            Order Now
+                        </button></a>
+                        <a href="products.html" class="card-btn-link">
+                        <button
+                            type="button"
+                            class="btn btn-light-custom px-4 px-md-5 py-3 rounded-3 label-lg d-flex align-items-center justify-content-center gap-2"
+                        >
+
+                            Explore Menu
+
+                            <span class="material-symbols-outlined text-secondary-custom">
+                                arrow_forward
+                            </span>
+
+                        </button>
+</a>
+                    </div>
+
+
+                    <!-- SOCIAL PROOF -->
+
+                    <div class="social-proof d-flex align-items-center gap-4">
+
+                        <div class="avatar-stack">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYUWfHqRBB4D3_dRl4kfVZi41x3kwVORNgSKfb8W80KOQj-sIYHpEswKPlOdYO8EqEcijR1yjWMIxvEAWv2tJxYirbS6RccSpBiSoGoD5_kevxn1OFRC1t2jTyJ1cXO60CJGWwF-2d-wlrWc-Bg0ycaUB6kX5MH6Gn5aQ1BZkLl56Wd4qUBgYlcUUaz9OgCtUHfB9_cmsFV1Qg1p2uQIZ0RAalyZE0hRFM-5xnbV5gJS2wUzx5qyGNEw"
+                                alt="Happy customer"
+                            >
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxX6xevE5IQ50mdxHsETR86hQ4nKea3t1eiekzspjixign0R7LG2gXO2RvWXE8AVowzU1V4kZ3-1LueAbnnDrxLaRh02Y1jVpcjPmUIRx3l2yh_hdXta1xVrH0935UNjww1EgwVASaii7VT4zF7lvbAxFe1dUvI4ABdmQV9H6ermrjRetSTUI7bZP-tJdMPKQowIQzYi7GpdZjl7trNRa9_hthglvNj_DfCOcfxQ9RzHvnYCI1e_Hxhw"
+                                alt="Happy customer"
+                            >
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm6xKCaYDykYCISGHU7jJccZ2Ezcn2N69K0KCUm5OmsKeClrah1hOtx3c7-NrUmMTr_wFeug70S4Ps65-csR_J-P1IW5pM_Xka3gv8QNQLzWbYKueTlnJr5korHNd6LyUnkgueJxKQ7NEEuPGQo5fENUqp39ZDDX6h-9azP_-syGUy_yS3aL-yMow2ry1lwHOkaQethuIEzC1pzzoTjrbizqgSPLpZR1tCInLKx90AAV7wzaJR3RVnDg"
+                                alt="Happy customer"
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="rating-stars d-flex gap-1">
+
+                                <span
+                                    class="material-symbols-outlined"
+                                    style="font-size:16px;"
+                                >
+                                    star
+                                </span>
+
+                                <span
+                                    class="material-symbols-outlined"
+                                    style="font-size:16px;"
+                                >
+                                    star
+                                </span>
+
+                                <span
+                                    class="material-symbols-outlined"
+                                    style="font-size:16px;"
+                                >
+                                    star
+                                </span>
+
+                                <span
+                                    class="material-symbols-outlined"
+                                    style="font-size:16px;"
+                                >
+                                    star
+                                </span>
+
+                                <span
+                                    class="material-symbols-outlined"
+                                    style="font-size:16px;"
+                                >
+                                    star
+                                </span>
+
+                            </div>
+
+                            <span class="label-sm text-on-surface-variant">
+                                Loved by 2,000+ sweet tooths
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO IMAGE -->
+
+                <div class="col-lg-5 d-none d-lg-flex justify-content-end">
+
+                    <div class="hero-image-wrapper">
+
+                        <img
+                            src="../assets/images/pexels-yulia-oliinychenko-849416506-19651272.jpg"
+                            alt="Fresh croissant"
+                        >
+
+                        <div class="fresh-badge">
+
+                            <span class="material-symbols-outlined">
+                                local_fire_department
+                            </span>
+
+                            <span class="label-sm fw-bold">
+                                Fresh out the oven!
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DAILY SPECIALS
+    ===================================================== -->
+
+    <section
+        id="products"
+        class="specials-section section-padding"
+    >
+
+        <div class="specials-decoration"></div>
+
+
+        <div
+            class="container-custom position-relative"
+            style="z-index:2;"
+        >
+
+
+            <!-- HEADER -->
+
+            <div class="row align-items-end g-4">
+
+                <div class="col-md-8">
+
+                    <span class="section-eyebrow d-block mb-2">
+                        Our Favorites
+                    </span>
+
+                    <h2 class="section-title mb-0">
+                        Daily Specials
+                    </h2>
+
+                    <p class="body-md section-description mt-3 mb-0">
+                        Curated selections baked fresh every morning. Grab them before they're gone!
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-4 text-md-end">
+<a href="products.html" class="card-btn-link">
+                    <button
+                        type="button"
+                        class="btn p-0 text-primary-custom label-lg"
+                    >
+
+                        View All Pastries
+
+                        <span
+                            class="material-symbols-outlined align-middle text-secondary-custom"
+                            style="font-size:20px;"
+                        >
+                            arrow_forward
+                        </span>
+
+                    </button>
+</a>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+
+            <div class="row g-4 mt-4 align-items-stretch">
+
+
+                <!-- LARGE CARD -->
+
+                <div class="col-lg-4">
+
+                    <div class="special-card h-100">
+
+                        <div class="special-card-image large-special-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuByd8vBvhasGOgI1wNtNQqO6eAj8mo6t7ro21dtB2n--CdeVFt4XS7lDUK8lOQPpJfJgNdnkZAAwMrD4vvvjWCwXePKnDsyzYKnW80HWS20TPz9rtMPKravcTeoLUFh-jApubJNTK-w1RRncGEMfzqVWGy44s_C9DTsnFGYvk3n2WOpFfP94qu9d5b8ziDUo0kD8NPvvygaZmd3N0gHLyLhsB-_tfj7dRCIJTSKcttrKkk5HgmHdJdyXw"
+                                alt="Chocolate truffle cake"
+                            >
+
+                            <div class="rating-badge">
+
+                                <span class="material-symbols-outlined">
+                                    star
+                                </span>
+
+                                4.9
+
+                            </div>
+
+                            <div class="signature-badge">
+                                Signature
+                            </div>
+
+                        </div>
+
+
+                        <div class="special-card-body d-flex flex-column">
+
+                            <h3 class="special-card-title">
+                                Midnight Truffle Cake
+                            </h3>
+
+                            <p class="body-md section-description mb-4">
+                                Rich, dense dark chocolate layers separated by silky Belgian chocolate ganache.
+                            </p>
+
+                            <div
+                                class="d-flex align-items-center justify-content-between border-top pt-3 mt-auto"
+                                style="border-color:rgba(129,117,110,.3)!important;"
+                            >
+
+                                <span class="price">
+                                    $42.00
+                                </span>
+
+                                <button
+                                    type="button"
+                                    class="add-cart-btn"
+                                    aria-label="Add to cart"
+                                >
+
+                                    <span class="material-symbols-outlined">
+                                        add_shopping_cart
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SMALL CARDS -->
+
+                <div class="col-lg-8">
+
+                    <div class="row g-4">
+
+
+                        <!-- RED VELVET -->
+
+                        <div class="col-md-6">
+
+                            <div class="special-card">
+
+                                <div class="small-special-image special-card-image">
+
+                                    <img
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEMSiMeIOfNOvmHc1KGmuCMS6mAs62XyiRzaIlXsQzJEAx7QGVBDYJhJGQiCJdm7zQbTfETxZFaO8S53Qniy-8sVDqyA9v0UWOmwcRJNg2pF2J1EO9_40L3tzASMJAkXMSG0IQjncmjH-YG3OYEgYPMFHINWUficQwKb72P9t0aYo77eEZ0cjK2_XIjMURlwv7RrOf2ftTcAeF8OIcJ2abkx-moin2F8j4PdmYKvR0pHg5spkuog385w"
+                                        alt="Red velvet cupcake"
+                                    >
+
+                                </div>
+
+                                <div class="small-card-body">
+
+                                    <div class="d-flex justify-content-between gap-3 mb-2">
+
+                                        <h3 class="small-card-title mb-0">
+                                            Red Velvet Cupcake
+                                        </h3>
+
+                                        <span class="small-price">
+                                            $4.50
+                                        </span>
+
+                                    </div>
+
+                                    <p class="body-md section-description mb-0">
+                                        Classic cocoa sponge with cream cheese.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CROISSANT -->
+
+                        <div class="col-md-6">
+
+                            <div class="special-card">
+
+                                <div class="small-special-image special-card-image">
+
+                                    <img
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkSTUFqMIh2qAU3cVXzNWGCrxCfDRUF-9MeKjaDxLJdQiBQmu79ILbeVSBw0TQcWdikyA1TFuunjQ9trA11BSULZAvq_dzRCkqoS7whqGgr7ISc5KD1iRJaPNUuPQGTbgXqe28r8DPfTpzAkGY1PxCx9KOAgdIpg3QsJomcDeRB208_TaJXlPDsD4hEUfvQQcW2quyaepU_0XIWtc40Wo5vEvjm9EzmluurCbgWwRK93tW1bg5QTot_w"
+                                        alt="Butter croissant"
+                                    >
+
+                                </div>
+
+                                <div class="small-card-body">
+
+                                    <div class="d-flex justify-content-between gap-3 mb-2">
+
+                                        <h3 class="small-card-title mb-0">
+                                            Butter Croissant
+                                        </h3>
+
+                                        <span class="small-price">
+                                            $3.75
+                                        </span>
+
+                                    </div>
+
+                                    <p class="body-md section-description mb-0">
+                                        Authentic French recipe, baked fresh daily.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- LEMON TART -->
+
+                        <div class="col-md-6">
+
+                            <div class="special-card">
+
+                                <div class="small-special-image special-card-image">
+
+                                    <img
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuARt8d305xo9Xk0vTCrGr7N7er4uLnm7imILvEfZxcy7AmjvAY2vhkYTO2vGO7Zn1c5xVSQ33rtK96Qlc1nDUgILZIC3ziJpzE_zZg-CGIfx0ebcqxa2P2ArBNQ57bLVxhhmJ3-I4OhVmgZDuh2p9fnSrmYU9FcJ8_UqoQVpEzIIUjwNIOPIqo2gcqLJvTIPaoXKr2itw1xQ9-IWRWXBPX41nSTysw_WxpZBLVdlMGbNut4R_ANuojtvQ"
+                                        alt="Lemon meringue tart"
+                                    >
+
+                                    <div class="seasonal-badge">
+                                        Seasonal
+                                    </div>
+
+                                </div>
+
+                                <div class="small-card-body">
+
+                                    <div class="d-flex justify-content-between gap-3 mb-2">
+
+                                        <h3 class="small-card-title mb-0">
+                                            Lemon Meringue Tart
+                                        </h3>
+
+                                        <span class="small-price">
+                                            $6.00
+                                        </span>
+
+                                    </div>
+
+                                    <p class="body-md section-description mb-0">
+                                        Zesty lemon curd with toasted meringue.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SOURDOUGH -->
+
+                        <div class="col-md-6">
+
+                            <div class="special-card">
+
+                                <div class="small-special-image special-card-image">
+
+                                    <img
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCHb4HYiGMMAEU8ZS0DA14-bgVjRhg92SHjVRZRQV2IiQZYK3bsRq5yTVoVkRxQla5pHNmeTGQGSMiz6TNEERhKyMj8qxRq9-obSziftvriLmxZH1DCum3ETdL7B3m2rSe33zbntkEC2Go92pxEz-_AEIbUh7KyFO7AV1YCpPIz6pRnzfqaI87RX80REOIcMKY9g9-62zeZXYXiJdPZcizE1II5XXmyh4XLqvt1_UgSqTpuPfPdYnBFg"
+                                        alt="Artisan sourdough"
+                                    >
+
+                                </div>
+
+                                <div class="small-card-body">
+
+                                    <div class="d-flex justify-content-between gap-3 mb-2">
+
+                                        <h3 class="small-card-title mb-0">
+                                            Artisan Sourdough
+                                        </h3>
+
+                                        <span class="small-price">
+                                            $8.50
+                                        </span>
+
+                                    </div>
+
+                                    <p class="body-md section-description mb-0">
+                                        48-hour fermented rustic country loaf.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CATEGORIES
+    ===================================================== -->
+
+    <section class="categories-section section-padding">
+
+        <div class="container-custom">
+
+            <div class="text-center mb-5">
+
+                <span class="section-eyebrow d-block mb-2">
+                    Occasions
+                </span>
+
+                <h2 class="section-title mb-0">
+                    Celebrate with Us
+                </h2>
+
+                <div class="section-divider"></div>
+
+            </div>
+
+
+            <div class="row g-3">
+
+
+                <!-- BIRTHDAY -->
+
+                <div class="col-6 col-md-4 col-lg-2">
+
+                    <a href="#" class="category-item">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB3K3ATLw8ZkCvUky0wcqOC993bVjJweH_bdvuQtuxP6tyaApa4tKXkv5Ulg0hVLXccK6S1iOi-9U4n0YsocJjouk9ORoFkvDAL166DTpAquEGJPBgLBauh51pWcUChbtz-n89hlzkF_oALPzqunjO0y8SsRZNXLvNZThuKXlcD4dcApAa283kZvHCd_tHtBVLsPAdFpucz4YA6880Fd9BeRCzUgrTt9sRuvds3ejs67bQdkVjo94kQw"
+                                alt="Birthday cake"
+                            >
+
+                        </div>
+
+                        <span class="label-lg">
+                            Birthday
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- WEDDING -->
+
+                <div class="col-6 col-md-4 col-lg-2">
+
+                    <a href="#" class="category-item">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi-90lZD7yaBdXMq-NP-9s09-y9njonxVpLnzMwI22vpVT1TLZtp0dUieOXc0O7lgJNlK4ISyz5oy_CQWm9B2WHNsoHwJb_OHJbdSjSkk57ii14GVDt-5UFbwJ5-p723j3qPuQqqpJ6Fla74DsglvC-ZdzVvV8-umPwPe9PHYGllQ1bzQK_BjmwXmljIsCGkf6L1p8Yiu-uCE1LgzUw-vg63IUUJBRExjEwHCinoeoX2feI_zvRoHsCA"
+                                alt="Wedding cake"
+                            >
+
+                        </div>
+
+                        <span class="label-lg">
+                            Wedding
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- ANNIVERSARY -->
+
+                <div class="col-6 col-md-4 col-lg-2">
+
+                    <a href="#" class="category-item">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPK4_8cLK5tQS6Yie1ZPX4jU93-wDfRLSyxGb8TND2K4KmZFUTcJeGWAFHSJIpdUvWY2kA3mdhrV7gvxJWYQLme5Q4EmhkngghZhTMYM_ZOrvovA73vvDk0L7VzZ-gisT0djSO-LKjYAnhIdelIAUzk8niVKgZhYgjxzFA3SyERW0wK3ruws_2PzvuwPKablN5LFO0jdEX7f6WzJ_vscCbFQpK42fOETI0C5VHaS500LXxEgE1_wP8hQ"
+                                alt="Anniversary cake"
+                            >
+
+                        </div>
+
+                        <span class="label-lg">
+                            Anniversary
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- BABY SHOWER -->
+
+                <div class="col-6 col-md-4 col-lg-2">
+
+                    <a href="#" class="category-item">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAafhfsYdBQtMNg-sxAyPf9F8IPHKPoYGwnbBQp3O0CXzNr6xp8njaKJfFOwGaXyoSQTSHNNy0znPeoY2TRAy--6sRbND_UP3N-gpiljIIrUb1ig9yJPL0-wd7BirjiBMke6RbfAXPcmgm42McKkBUO13bLfnbPr8mDVbyzuSN_-hpA7nlCwh4_0tBOPrRFMCZfy66fKu2SNX7GhE7vh0u5CNjNHDfi8meKUoNAldh41Fx9gvYyxoMlEA"
+                                alt="Baby shower cupcakes"
+                            >
+
+                        </div>
+
+                        <span class="label-lg">
+                            Baby Shower
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- FESTIVAL -->
+
+                <div class="col-6 col-md-4 col-lg-2">
+
+                    <a href="#" class="category-item">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCrHpV-TceHitjm4t8fVZqr0qqAAAlpLmlizUnbaxuD2BtzJ8HmawNWA2DKNEGoLc153-ruBDucc1VtCqIQmMI8RcdL_cVTi_7BcKRr0iy-5Pmb9_t7qUQ3JohOZek4zo14Azk8niHsv_YPAfL7LNPqWeT7tl9PZX3-eNQS2cR9-t3CBpQDWGcmE4llu-Rw7yiU58rx1vlJ6m4dON3l3UH-RqqMQcAOrFYlX2sKHucrd0v7G_mDLrs8A"
+                                alt="Festival pastries"
+                            >
+
+                        </div>
+
+                        <span class="label-lg">
+                            Festival
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- CORPORATE -->
+
+                <div class="col-6 col-md-4 col-lg-2">
+
+                    <a href="#" class="category-item">
+
+                        <div class="category-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO-0G-UxyKfcT5tjG0o8AoFwfLYVdt4pVoYQHTlTWFRXlXEYFDovxvCQI3gM6wFlR1IiLKZ65CeoWEhy-GNn7Zz_I03qCSf6_bju8y1p7bC54P7DxNsABUx0l_6xwVqAm2l-VhnsUjhKzeTZLmxmq3h3C-qAIQSmGBMnpv5f5OPss0HqMm4tcQOSyzPw-EKPPeyObbSC_aM020JIOSe7FHOLt64rKkw2SPjuz30YIVt-yY7NruSa-9fw"
+                                alt="Corporate bakery gift"
+                            >
+
+                        </div>
+
+                        <span class="label-lg">
+                            Corporate
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CUSTOM ORDER
+    ===================================================== -->
+
+    <section
+        id="custom-orders"
+        class="custom-order-section section-padding"
+    >
+
+        <div class="container-custom">
+
+            <div class="custom-order-card">
+
+                <div class="row align-items-center g-5">
+
+
+                    <div class="col-lg-6">
+
+                        <div class="position-relative">
+
+                            <img
+                                class="custom-order-image"
+                                src="../assets/images/Design.jpg"
+                                alt="Custom cake decoration"
+                            >
+
+                            <div class="custom-stat">
+
+                                <div class="custom-stat-number">
+                                    10k+
+                                </div>
+
+                                <div class="custom-stat-label">
+                                    Custom Cakes
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-6">
+
+                        <span class="label-lg custom-eyebrow text-uppercase letter-spacing-widest">
+                            Your Dream, Our Canvas
+                        </span>
+
+                        <h2 class="section-title text-white mt-3 mb-4">
+                            Create Your Perfect Custom Cake
+                        </h2>
+
+                        <p class="body-lg custom-order-description">
+
+                            From extravagant wedding tiers to personalized birthday centerpieces. Work directly with our master bakers to design a cake that perfectly captures your vision and tastes incredible.
+
+                        </p>
+
+
+                        <ul class="feature-list mt-4">
+
+                            <li>
+
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+
+                                Complimentary tasting sessions
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+
+                                Custom flavor profile creation
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+
+                                Hand-sculpted sugar decorations
+
+                            </li>
+
+                        </ul>
+
+<a href="index.html" class="card-btn-link">
+                        <button
+                            type="button"
+                            class="btn btn-secondary-custom px-4 px-md-5 py-3 rounded-3 mt-4 label-lg"
+                        >
+                            Start Your Design
+                        </button>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MASTERCLASS
+    ===================================================== -->
+
+    <section class="masterclass-section section-padding">
+
+        <div class="container-custom">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6">
+
+                    <span class="section-eyebrow">
+                        Learn The Art
+                    </span>
+
+                    <h2 class="section-title mt-2">
+                        Baking Masterclasses
+                    </h2>
+
+                    <p class="body-lg section-description mt-3">
+
+                        Discover the secrets behind our most loved creations. Whether you're a beginner wanting to perfect your sourdough or an aspiring pastry chef looking to master macarons, our expert bakers will guide you every step of the way.
+
+                    </p>
+<a href="index.html" class="card-btn-link">
+                    <button
+                        type="button"
+                        class="btn btn-primary-custom px-4 px-md-5 py-3 rounded-3 mt-4 label-lg"
+                    >
+                        Join a Workshop
+                    </button>
+</a>
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="masterclass-image-wrapper">
+
+                        <img
+                            class="masterclass-image"
+                            src="../assets/images/art.jpg"
+                            alt="Baking masterclass"
+                        >
+
+                        <div class="all-levels-badge">
+
+                            <div class="school-icon">
+
+                                <span class="material-symbols-outlined">
+                                    school
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <div class="font-headline headline-md text-primary-custom">
+                                    All Levels
+                                </div>
+
+                                <div class="label-sm text-on-surface-variant text-uppercase letter-spacing-widest">
+                                    Welcome
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SEASONAL COLLECTION
+    ===================================================== -->
+
+    <section class="seasonal-section section-padding">
+
+        <div class="container-custom">
+
+            <div class="text-center mb-5">
+
+                <span class="section-eyebrow d-block mb-2">
+                    Taste of the Season
+                </span>
+
+                <h2 class="section-title mb-0">
+                    Seasonal Collection
+                </h2>
+
+                <div class="section-divider"></div>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- PUMPKIN -->
+
+                <div class="col-sm-6 col-lg-3">
+
+                    <div class="seasonal-card">
+
+                        <div class="seasonal-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGqrbl44_WI_OHst0u_qHvT1sNUsmHY7ON7Uw1FLodjtzgUNOrBswozkE0BvXloQynWJodOczByocX_6NSAhFy7ZYOoCNJlUibK2inLP_R_5uxixivUnANAvELL4V3UL0ob8PqxBRzCW0Dhn34rl323DYZgYFcOFUZKri7PDkzAR6ZIUdNd-51wxQSP9_lLZ68EkBfeouSjxhBSz_yEMTFLaF3evX3N2erObaKMBnFnZ7y1TeewjKzLQ"
+                                alt="Pumpkin spice tart"
+                            >
+
+                            <span class="limited-badge">
+                                Limited Edition
+                            </span>
+
+                        </div>
+
+                        <div class="seasonal-card-body">
+
+                            <h3 class="seasonal-card-title">
+                                Pumpkin Spice Tart
+                            </h3>
+
+                            <p class="body-md section-description mb-0">
+
+                                Warm autumn spices blended into a creamy pumpkin filling.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GINGERBREAD -->
+
+                <div class="col-sm-6 col-lg-3">
+
+                    <div class="seasonal-card">
+
+                        <div class="seasonal-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3VydiWV4ZeCazZY3FsyL8r5e3mNqLXk_wlI1idzTRwgzH6JikkNLQYdMCVnENT_txcLjoln4H5j1z2DL9cpcRo7KZXIeThqM9K-MQ5zJVy0L4Q5QdVip8DgNIBfoqsAYzvOrKo9CJLQ0jX6UHMfi1LzpewoGM2qDo2GKKYAExTQaIf8SFZceYvOqgbMN7nMXzTvbUPfZW46jubvEwtInPMl86BMeLC-CNJsWKHv-bc6pYnMVJb2Hafw"
+                                alt="Gingerbread stars"
+                            >
+
+                            <span class="limited-badge">
+                                Limited Edition
+                            </span>
+
+                        </div>
+
+                        <div class="seasonal-card-body">
+
+                            <h3 class="seasonal-card-title">
+                                Gingerbread Stars
+                            </h3>
+
+                            <p class="body-md section-description mb-0">
+
+                                Classic spiced gingerbread with a satisfying snap.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MACARON -->
+
+                <div class="col-sm-6 col-lg-3">
+
+                    <div class="seasonal-card">
+
+                        <div class="seasonal-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeRVH0uXxuXKNDaf_BvHoBXCWcftdYDRn47qYTI8l5ZVRyLFvcS-FWrPk8Q4-rgP6q1md5Z7sCVUClZUe8R1Il8hQgEiqU-wF4AOEi_aab08OxVvlLTdrmm-EQn2-J9HAbb9z2lj0RAgbAM6goaO4j9CEFM87RoOaNmJnx8hxNN3b039rDfK9abyFaxK66FjHmdNesN1Bqr-pzC76jotdot5EeqR2ppPAEG8FHFaP-OguoRaf9WEuujQ"
+                                alt="Mocha macaron"
+                            >
+
+                            <span class="limited-badge">
+                                Limited Edition
+                            </span>
+
+                        </div>
+
+                        <div class="seasonal-card-body">
+
+                            <h3 class="seasonal-card-title">
+                                Mocha Macaron
+                            </h3>
+
+                            <p class="body-md section-description mb-0">
+
+                                Delicate chocolate shells filled with refreshing peppermint dark.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUCHE -->
+
+                <div class="col-sm-6 col-lg-3">
+
+                    <div class="seasonal-card">
+
+                        <div class="seasonal-image">
+
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9QyhYf-I0BUyONUnhqxEIuWSVmpjmPIjWPHDVO73kd0wrIl5l5-v5WXQTPRAv9GGNRTVSedVC0NHkdLrevhgaBdDWWPC0_qNMObHuXQgbCeNar3eM7KmI6hhyPUHrYmVOoZs5hEaoonqZyIWJsTN7FhkUKMpN8pNp6VREb-CsFUkVz5eJ0K7W4C21fPJxavGe__3BRhL1vS53SqbwXYG-NJAzv7to8-hGy9Vixpd-Bd7CkRgX4JK2qg"
+                                alt="Forest Buche de Noel"
+                            >
+
+                            <span class="limited-badge">
+                                Limited Edition
+                            </span>
+
+                        </div>
+
+                        <div class="seasonal-card-body">
+
+                            <h3 class="seasonal-card-title">
+                                Forest Buche de Noel
+                            </h3>
+
+                            <p class="body-md section-description mb-0">
+
+                                Our signature holiday yule log, a chocolate hazelnut masterpiece.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ARTISANAL PROCESS
+    ===================================================== -->
+
+    <section class="process-section section-padding">
+
+        <div class="container-custom">
+
+            <div class="text-center mb-5">
+
+                <span class="section-eyebrow d-block mb-2">
+                    From Grain to Oven
+                </span>
+
+                <h2 class="section-title mb-0">
+                    The Artisanal Process
+                </h2>
+
+                <div class="section-divider"></div>
+
+            </div>
+
+
+            <div class="process-wrapper">
+
+                <div class="process-line"></div>
+
+
+                <div class="row g-5">
+
+
+                    <!-- STEP 1 -->
+
+                    <div class="col-md-4">
+
+                        <div class="process-step">
+
+                            <img
+                                class="process-image"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDODiM5QwcP1uVyDFG-Ai79KbkkxrfeBEGzwiXRLZmWRApgw5ljlZukQJeFZy1f7qUWlFQaELM4QAdfsTszYyvEO-is-QoXj1alEOq5XCK5EfVHdT0dSEGjMHq3wZLUgdt-CmS5YbHTLky5Q7hS9Uw2d2QT4QVLTSYPD8-jXJP7VGYz4YxHpSTM2rERcSpLNFC8u83P0gwaBWRt1Mmy45I9tL5zVi_GFhaiSLW0165YO0b5qpakmZqgYw"
+                                alt="Local sourcing"
+                            >
+
+                            <div class="process-number">
+                                1
+                            </div>
+
+                            <h3 class="process-title">
+                              Ground Flour
+                            </h3>
+
+                            <p class="body-md section-description">
+
+                               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse distinctio asperiores facere suscipit nostrum? Consectetur.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 2 -->
+
+                    <div class="col-md-4">
+
+                        <div class="process-step">
+
+                            <img
+                                class="process-image"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOkczCD3JdYbTo4r8oZRQn-dun3vSY4eeyjY3xOvAKNdqZdFc_Ou5DtBwodVUkpisVLehseHv4HP2ApHwRl2enwVKCSljfhQnm4ScEVGdcbFygyocHm1k45y7wVQDxy4O3ZzpV5DXI1hTyAKfsaANntPnwcoj-9yUcku13D-tONvjz9eM3OzIcWGQ88qvM2TrLb8S9tDqO7Br0Gj-wVnYdzFGQ1UTnneGP0JOUCM5wbFMXPzS95diFNg"
+                                alt="Sourdough starter"
+                            >
+
+                            <div class="process-number">
+                                2
+                            </div>
+
+                            <h3 class="process-title">
+                                 Fermentation
+                            </h3>
+
+                            <p class="body-md section-description">
+
+                               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse distinctio asperiores facere suscipit nostrum? Consectetur.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 3 -->
+
+                    <div class="col-md-4">
+
+                        <div class="process-step">
+
+                            <img
+                                class="process-image"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpZJJxXfMVCz27z6mmNFUkqAzhVAhGMvEXhQduBXKqaGkZs9DFoYfN7tiTtcSKs8iFFeSfwJ8tUZqJcb6GJUB766yyKx-ZdYfukra-l6s7xHdvtRogd0Wm897QUjMShzSkMo83B3BUDnV47PFTfQ8_CYhVC5BDYOegc_EfOvwFOTKlUP-ThjjcAzaFJT3ZyioVx91Z_OqeVNJSgo5GNgoFur4M7KpRzVKVM40v_SAVZAPukOU742XwzQ"
+                                alt="Hearth baked bread"
+                            >
+
+                            <div class="process-number">
+                                3
+                            </div>
+
+                            <h3 class="process-title">
+                                Hearth Baked
+                            </h3>
+
+                            <p class="body-md section-description">
+
+                               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse distinctio asperiores facere suscipit nostrum? Consectetur.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer
+    id="contact"
+    class="site-footer"
+>
+
+    <div class="container-custom">
+
+        <div class="row g-5 mb-5">
+
+
+            <!-- BRAND -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <img
+                      src="../assets/images/white logo.png"
+                      alt="Sweet Moments Bakery Logo"
+                      class="footer-logo"
+                >
+
+                <p class="body-md footer-description mt-3">
+
+                    Crafting artisanal moments of sweetness since 1994. Every pastry tells a story of tradition and passion.
+
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Follow us on Instagram">
+                        <span class="material-symbols-outlined">
+                            photo_camera
+                        </span>
+                    </a>
+
+                    <a href="#" aria-label="Follow us on Facebook">
+                        <span class="material-symbols-outlined">
+                            thumb_up
+                        </span>
+                    </a>
+
+                    <a href="mailto:hello@sweetmomentsbakery.com" aria-label="Email us">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="col-lg-2 col-md-6">
+
+                <h4 class="footer-heading">
+                    Quick Links
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#">
+                            Our Story
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Bakeries
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Gift Cards
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Terms of Service
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4 class="footer-heading">
+                    Contact Info
+                </h4>
+
+                <ul class="footer-contact">
+
+                    <li>
+
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+
+                        <span>
+                            123 Baker St, Flour District, NY
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <span class="material-symbols-outlined">
+                            phone
+                        </span>
+
+                        <span>
+                            +1 (555) 123-4567
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <span class="material-symbols-outlined">
+                            schedule
+                        </span>
+
+                        <span>
+                            Mon-Sat: 7AM - 8PM
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4 class="footer-heading">
+                    Newsletter
+                </h4>
+
+                <p class="body-md footer-description mb-3">
+                    Join our sweet list for fresh updates.
+                </p>
+
+                <form>
+
+                    <input
+                        type="email"
+                        class="newsletter-input mb-2"
+                        placeholder="Your Email"
+                        aria-label="Your Email"
+                    >
+
+                    <button
+                        type="submit"
+                        class="btn btn-secondary-custom w-100 py-3 rounded-3 label-lg"
+                    >
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <div class="row align-items-center g-3">
+
+
+                <div class="col-md-6 text-center text-md-start">
+
+                    © 2026 Sweet Moments Bakery.
+                    Handcrafted with love.
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="d-flex justify-content-center justify-content-md-end gap-4">
+
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#">
+                            Cookies
+                        </a>
+
+                        <a href="#">
+                            Sitemap
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- =========================================================
+     DARK MODE JAVASCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* ---------------------------------------------------------
+       ELEMENTS
+    --------------------------------------------------------- */
+
+    const themeToggle =
+        document.getElementById("themeToggle");
+
+    const themeIcon =
+        document.getElementById("themeIcon");
+
+
+    /* ---------------------------------------------------------
+       CHECK SAVED THEME
+    --------------------------------------------------------- */
+
+    const savedTheme =
+        localStorage.getItem("sweetMomentsTheme");
+
+
+    /* ---------------------------------------------------------
+       LOAD DARK MODE IF SAVED
+    --------------------------------------------------------- */
+
+    if (savedTheme === "dark") {
+
+        document.body.classList.add("dark-mode");
+
+        themeIcon.textContent = "dark_mode";
+
+        themeToggle.setAttribute(
+            "aria-label",
+            "Switch to light mode"
+        );
+
+        themeToggle.setAttribute(
+            "title",
+            "Switch to light mode"
+        );
+
+    }
+
+
+    /* ---------------------------------------------------------
+       THEME TOGGLE
+    --------------------------------------------------------- */
+
+    themeToggle.addEventListener("click", function () {
+
+
+        /* Toggle dark mode */
+
+        document.body.classList.toggle("dark-mode");
+
+
+        /* Check current mode */
+
+        const isDark =
+            document.body.classList.contains("dark-mode");
+
+
+        /* -----------------------------------------------------
+           DARK MODE
+        ----------------------------------------------------- */
+
+        if (isDark) {
+
+            themeIcon.textContent = "dark_mode";
+
+            themeToggle.setAttribute(
+                "aria-label",
+                "Switch to light mode"
+            );
+
+            themeToggle.setAttribute(
+                "title",
+                "Switch to light mode"
+            );
+
+            localStorage.setItem(
+                "sweetMomentsTheme",
+                "dark"
+            );
+
+        }
+
+
+        /* -----------------------------------------------------
+           LIGHT MODE
+        ----------------------------------------------------- */
+
+        else {
+
+            themeIcon.textContent = "light_mode";
+
+            themeToggle.setAttribute(
+                "aria-label",
+                "Switch to dark mode"
+            );
+
+            themeToggle.setAttribute(
+                "title",
+                "Switch to dark mode"
+            );
+
+            localStorage.setItem(
+                "sweetMomentsTheme",
+                "light"
+            );
+
+        }
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html>

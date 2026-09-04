@@ -1,0 +1,272 @@
+/* =========================================================================
+   SWEET MOMENTS BAKERY — SPECIAL PAGES
+   Styles for the standalone 404 (Page Not Found) and Coming Soon pages.
+   Loaded only on those two pages, after main.css / dark-mode.css /
+   site-refresh.css, so it reuses the same design tokens, buttons and
+   footer/newsletter styling as the rest of the site.
+========================================================================= */
+
+@keyframes float-crumb {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(10deg); }
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+
+/* -------------------------------------------------------------------------
+   404 — PAGE NOT FOUND
+------------------------------------------------------------------------- */
+
+.error-page {
+  padding: 110px 0 130px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.error-illustration {
+  position: relative;
+  height: 110px;
+  margin-bottom: 4px;
+}
+
+.error-icon-main {
+  font-size: 92px;
+  color: var(--secondary);
+  display: inline-block;
+}
+
+.error-crumb {
+  position: absolute;
+  color: var(--secondary-fixed-dim, #F0BD8B);
+  opacity: .85;
+}
+
+.error-crumb-1 { top: 6px; left: calc(50% - 118px); font-size: 26px; }
+.error-crumb-2 { top: 22px; right: calc(50% - 128px); font-size: 22px; }
+.error-crumb-3 { bottom: 4px; left: calc(50% + 84px); font-size: 20px; }
+
+.error-code {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: clamp(96px, 22vw, 220px);
+  line-height: 1;
+  margin: 0;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.error-title {
+  margin: 8px 0 0;
+  font-size: clamp(26px, 4vw, 40px);
+}
+
+.error-message {
+  max-width: 520px;
+  margin: 16px auto 36px;
+  color: var(--on-surface-variant);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.error-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .error-crumb-1 { animation: float-crumb 4.5s ease-in-out infinite; }
+  .error-crumb-2 { animation: float-crumb 5.5s ease-in-out infinite .4s; }
+  .error-crumb-3 { animation: float-crumb 5s ease-in-out infinite .8s; }
+  .error-icon-main { animation: wobble 6s ease-in-out infinite; }
+}
+
+@media (max-width: 767.98px) {
+  .error-page { padding: 88px 0 96px; }
+}
+
+@media (max-width: 575.98px) {
+  .error-page { padding: 72px 0 80px; }
+  .error-icon-main { font-size: 64px; }
+  .error-crumb-1 { left: calc(50% - 78px); }
+  .error-crumb-2 { right: calc(50% - 84px); }
+  .error-crumb-3 { left: calc(50% + 56px); }
+  .error-message { font-size: 15px; }
+}
+
+/* -------------------------------------------------------------------------
+   COMING SOON — with live countdown
+------------------------------------------------------------------------- */
+
+.coming-soon-page {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 90px 0;
+}
+
+.coming-soon-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.coming-soon-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(38, 23, 12, .82) 0%, rgba(38, 23, 12, .92) 100%);
+}
+
+.coming-soon-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.coming-soon-icon {
+  font-size: 54px;
+  color: var(--secondary-fixed, #FFDCBD);
+  margin-bottom: 14px;
+  display: inline-block;
+}
+
+.coming-soon-title {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.coming-soon-description {
+  color: rgba(255, 255, 255, .75);
+  max-width: 480px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.countdown-item {
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 16px;
+  padding: 18px 22px;
+  min-width: 84px;
+}
+
+.countdown-number {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.countdown-label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: rgba(255, 255, 255, .6);
+  margin-top: 4px;
+}
+
+.coming-soon-form {
+  display: flex;
+  gap: 12px;
+  max-width: 420px;
+  margin: 0 auto 12px;
+}
+
+.coming-soon-form .newsletter-input {
+  flex: 1 1 auto;
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .22);
+  color: #fff;
+}
+
+.coming-soon-form .newsletter-input::placeholder { color: rgba(255, 255, 255, .55); }
+
+.coming-soon-form .newsletter-input:focus { border-color: var(--secondary-fixed, #FFDCBD); }
+
+.coming-soon-form-note {
+  min-height: 20px;
+  color: var(--secondary-fixed, #FFDCBD);
+  font-size: 14px;
+  margin: 0 0 28px;
+}
+
+.coming-soon-social { justify-content: center; margin-top: 0; }
+
+.coming-soon-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background .25s ease, border-color .25s ease;
+}
+
+.coming-soon-social a .material-symbols-outlined { color: #fff; font-size: 18px; }
+
+.coming-soon-social a:hover { background: var(--secondary); border-color: var(--secondary); }
+
+.coming-soon-floaters {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.floater { position: absolute; color: rgba(255, 255, 255, .16); }
+
+.floater-1 { top: 12%; left: 8%; font-size: 48px; }
+.floater-2 { top: 18%; right: 9%; font-size: 60px; }
+.floater-3 { bottom: 16%; left: 11%; font-size: 40px; }
+.floater-4 { bottom: 22%; right: 7%; font-size: 52px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .floater-1 { animation: float-crumb 7s ease-in-out infinite; }
+  .floater-2 { animation: float-crumb 9s ease-in-out infinite 1s; }
+  .floater-3 { animation: float-crumb 8s ease-in-out infinite .5s; }
+  .floater-4 { animation: float-crumb 6.5s ease-in-out infinite 1.5s; }
+}
+
+@media (max-width: 767.98px) {
+  .coming-soon-form { flex-direction: column; }
+  .countdown-item { min-width: 68px; padding: 14px 10px; }
+  .countdown-number { font-size: 26px; }
+  .floater-2, .floater-4 { display: none; }
+}
+
+@media (max-width: 575.98px) {
+  .coming-soon-page { padding: 64px 0; }
+  .coming-soon-icon { font-size: 42px; }
+  .countdown { gap: 10px; }
+  .countdown-item { min-width: 60px; padding: 12px 8px; }
+  .countdown-number { font-size: 22px; }
+  .countdown-label { font-size: 10px; }
+}
