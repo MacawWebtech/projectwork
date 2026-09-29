@@ -1,0 +1,467 @@
+/* =========================================================================
+   SWEET MOMENTS BAKERY — HEADER & FOOTER
+   Self-contained stylesheet for the site header and footer only, kept
+   separate from main.css so the two landmarks can be styled and
+   maintained independently.
+
+   Load order: main.css -> dark-mode.css -> header-footer.css
+   This file only reads CSS custom properties already defined in
+   main.css's :root and re-pointed by dark-mode.css on body.dark-mode,
+   so header/footer re-theme automatically with the rest of the site.
+   The two spots that intentionally stay constant in both themes
+   (topbar/footer on the fixed "panel" brand color, and the frosted
+   header background) are called out below.
+========================================================================= */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Bakery "string" divider used to bookend the page, under the header
+   and above the footer. */
+.sm-divider {
+  height: 6px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--secondary) 0 14px,
+    transparent 14px 28px
+  );
+}
+
+/* =========================================================================
+   HEADER
+========================================================================= */
+
+.sm-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  width: 100%;
+  background: rgba(254, 249, 239, .94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 10px rgba(38, 23, 12, .08);
+}
+
+body.dark-mode .sm-header {
+  background: rgba(24, 18, 14, .94);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, .35);
+}
+
+/* ---- info topbar (desktop / large tablets only) ---- */
+.sm-topbar {
+  display: none;
+  background: var(--primary);
+  color: var(--panel-text, #fff);
+}
+
+.sm-topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 40px;
+  min-height: 34px;
+  font-size: 12px;
+  letter-spacing: .02em;
+  text-align: center;
+}
+
+.sm-topbar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  opacity: .92;
+  white-space: nowrap;
+}
+
+.sm-topbar-item .material-symbols-outlined { font-size: 15px; }
+
+@media (min-width: 992px) {
+  .sm-topbar { display: flex; }
+}
+
+/* ---- main row ---- */
+.sm-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 76px;
+}
+
+.sm-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  flex: 0 0 auto;
+}
+
+.sm-brand-mark {
+  display: block;
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.sm-brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.15;
+}
+
+.sm-brand-name {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.sm-brand-sub {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+/* ---- desktop nav ---- */
+.sm-nav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  gap: clamp(16px, 2.4vw, 32px);
+  margin: 0 12px;
+}
+
+@media (min-width: 1200px) {
+  .sm-nav { display: flex; }
+}
+
+.sm-nav a {
+  position: relative;
+  display: inline-block;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 0;
+  white-space: nowrap;
+  transition: color .25s ease;
+}
+
+.sm-nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: left .25s ease, right .25s ease;
+}
+
+.sm-nav a:hover,
+.sm-nav a.active { color: var(--primary); }
+
+.sm-nav a:hover::after,
+.sm-nav a.active::after { left: 0; right: 0; }
+
+/* ---- header actions ---- */
+.sm-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+}
+
+.sm-icon-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  border-radius: 50%;
+  color: var(--on-surface-variant);
+  align-items: center;
+  justify-content: center;
+  transition: background .25s ease, color .25s ease;
+}
+
+@media (min-width: 768px) {
+  .sm-icon-btn { display: flex; }
+}
+
+.sm-icon-btn:hover { background: var(--surface-container); color: var(--primary); }
+
+.sm-order-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 999px;
+  padding: 11px 22px;
+  background: var(--primary);
+  color: var(--panel-text, #fff);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease;
+}
+
+@media (min-width: 768px) {
+  .sm-order-btn { display: inline-flex; }
+}
+
+.sm-order-btn .material-symbols-outlined { font-size: 18px; }
+
+.sm-order-btn:hover { background: var(--secondary); transform: translateY(-1px); }
+
+.sm-burger {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  color: var(--primary);
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .sm-burger { display: none; }
+}
+
+/* ---- mobile / tablet nav drawer ---- */
+.sm-mobile-nav {
+  background: var(--surface);
+  border-top: 1px solid var(--outline-variant);
+}
+
+@media (min-width: 1200px) {
+  .sm-mobile-nav { display: none !important; }
+}
+
+.sm-mobile-nav nav {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0 24px;
+}
+
+.sm-mobile-nav a {
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--outline-variant);
+  transition: color .25s ease;
+}
+
+.sm-mobile-nav a:hover,
+.sm-mobile-nav a.active { color: var(--secondary); }
+
+.sm-mobile-nav .sm-order-btn {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+}
+
+@media (max-width: 575.98px) {
+  .sm-header-row { min-height: 64px; gap: 12px; }
+  .sm-brand-mark { height: 30px; }
+  .sm-brand-name { font-size: 17px; }
+  .sm-brand-sub { font-size: 10px; letter-spacing: .18em; }
+  .sm-actions { gap: 2px; }
+}
+
+/* =========================================================================
+   FOOTER
+========================================================================= */
+
+.sm-footer {
+  background: var(--panel-bg, #26170C);
+  color: var(--panel-text, #fff);
+  padding-top: 64px;
+}
+
+.sm-footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 56px;
+}
+
+.sm-footer-col p {
+  color: #D9C2AE;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.sm-footer-logo {
+  display: block;
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 16px;
+  filter: brightness(0) invert(1);
+}
+
+.sm-social {
+  display: flex;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.sm-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .2);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background .25s ease, border-color .25s ease;
+  flex: 0 0 auto;
+}
+
+.sm-social a:hover { background: var(--secondary); border-color: var(--secondary); }
+
+.sm-social .material-symbols-outlined { font-size: 18px; }
+
+.sm-footer-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 22px;
+}
+
+.sm-footer-list,
+.sm-footer-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sm-footer-list li { margin-bottom: 12px; }
+
+.sm-footer-list a {
+  color: #D9C2AE;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color .25s ease;
+}
+
+.sm-footer-list a:hover { color: var(--secondary-container, #FFCA98); }
+
+.sm-footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #D9C2AE;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sm-footer-contact .material-symbols-outlined {
+  font-size: 20px;
+  color: var(--secondary-container, #FFCA98);
+  flex: 0 0 20px;
+}
+
+/* ---- newsletter "order ticket" ---- */
+.sm-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+  padding: 16px;
+  border: 1px dashed rgba(255, 255, 255, .3);
+  border-radius: 14px;
+}
+
+.sm-newsletter input {
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+  padding: 11px 14px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.sm-newsletter input::placeholder { color: #B79E89; }
+
+.sm-newsletter input:focus { border-color: var(--secondary-container, #FFCA98); }
+
+.sm-newsletter button {
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 14px;
+  background: var(--secondary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background .25s ease, color .25s ease;
+}
+
+.sm-newsletter button:hover {
+  background: var(--secondary-container, #FFCA98);
+  color: var(--panel-bg, #26170C);
+}
+
+/* ---- footer bottom bar ---- */
+.sm-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  color: #B79E89;
+}
+
+.sm-footer-bottom p { margin: 0; }
+
+.sm-footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 24px;
+}
+
+.sm-footer-legal a {
+  color: #B79E89;
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+.sm-footer-legal a:hover { color: #fff; }
+
+/* ---- footer responsive breakpoints ---- */
+@media (max-width: 991.98px) {
+  .sm-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sm-footer { padding-top: 48px; }
+  .sm-footer-grid { grid-template-columns: 1fr; gap: 36px; padding-bottom: 40px; }
+  .sm-footer-bottom { flex-direction: column; align-items: flex-start; text-align: left; }
+}

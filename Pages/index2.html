@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sweet Moments Bakery</title>
+
+  <!-- Bootstrap 5.3.3 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+<link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@100..900&display=swap"
+    rel="stylesheet"
+  >
+
+
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+    <link rel="stylesheet" href="../assets/css/refinements.css">
+</head>
+
+<body class="page-home page-home2">
+<script>(function(){try{if(localStorage.getItem("sweetMomentsTheme")==="dark"){document.body.classList.add("dark-mode");}if(localStorage.getItem("sweetMomentsDir")==="rtl"){document.documentElement.setAttribute("dir","rtl");}}catch(e){}})();</script>
+
+
+
+
+<header class="main-header">
+
+    <div class="container-custom">
+
+        <div class="header-inner">
+
+            <!-- BRAND: icon + readable wordmark + tagline -->
+            <a href="index.html" class="brand" aria-label="Sweet Moments Bakery, home">
+                <img src="../assets/images/icon.png" alt="" class="brand-mark" width="173" height="194">
+                <span class="brand-text">
+                    <span class="brand-name">Sweet Moments <span class="brand-kind">Bakery</span></span>
+                    <span class="brand-tagline">Made with love, baked for you</span>
+                </span>
+            </a>
+
+            <!-- DESKTOP NAVIGATION (xl and up) -->
+            <nav class="desktop-nav d-none d-xl-flex align-items-center" aria-label="Main navigation">
+
+                <div class="dropdown nav-dropdown">
+                    <a href="index.html" class="dropdown-toggle label-lg active" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Home 01</a></li>
+                        <li><a class="dropdown-item active" href="index2.html">Home 02</a></li>
+                    </ul>
+                </div>
+
+                <a href="about.html" class="label-lg">About Us</a>
+                <a href="products.html" class="label-lg">Products</a>
+                <a href="Custom cake.html" class="label-lg">Custom Orders</a>
+                <a href="pricing.html" class="label-lg">Pricing</a>
+                <a href="delivery.html" class="label-lg">Delivery</a>
+                <a href="Contact.html" class="label-lg">Contact</a>
+
+            </nav>
+
+            <!-- HEADER ACTIONS -->
+            <div class="header-actions">
+
+                <!-- RTL / LTR TOGGLE (tablet and up; inside the menu on phones) -->
+                <button type="button" class="dir-toggle js-dir-toggle d-none d-sm-inline-flex" aria-pressed="false" aria-label="Switch to right-to-left layout" title="Switch to right-to-left layout">
+                    <span class="js-dir-short" aria-hidden="true">RTL</span>
+                </button>
+
+                <!-- THEME TOGGLE (wired by the page's dark-mode script) -->
+                <button type="button" id="themeToggle" class="header-icon-btn d-none d-sm-flex" aria-label="Switch to dark mode" title="Switch to dark mode">
+                    <span class="material-symbols-outlined" id="themeIcon" aria-hidden="true">light_mode</span>
+                </button>
+
+                <!-- ORDER NOW: always visible in the header, at every screen width -->
+                <a href="Custom cake.html" class="btn btn-primary-custom btn-header">Order Now</a>
+
+                <!-- MOBILE MENU TRIGGER -->
+                <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavigation" aria-controls="mobileNavigation" aria-expanded="false" aria-label="Open menu">
+                    <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- MOBILE / TABLET NAVIGATION (below 1200px) -->
+        <div class="collapse d-xl-none mobile-menu" id="mobileNavigation">
+
+            <nav aria-label="Mobile navigation">
+
+                <div class="mobile-home-group">
+                    <span class="mobile-group-label">Home</span>
+                    <div class="mobile-home-links">
+                        <a href="index.html" class="mobile-home-link">Home 01</a>
+                        <a href="index2.html" class="mobile-home-link active">Home 02</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="mobile-link">About Us</a>
+                <a href="products.html" class="mobile-link">Products</a>
+                <a href="Custom cake.html" class="mobile-link">Custom Orders</a>
+                <a href="pricing.html" class="mobile-link">Pricing</a>
+                <a href="delivery.html" class="mobile-link">Delivery</a>
+                <a href="Contact.html" class="mobile-link">Contact</a>
+
+                <!-- display tools: only shown on phones, where the header icons are hidden -->
+                <div class="mobile-tools d-sm-none">
+                    <button type="button" class="mobile-tool js-theme-proxy" aria-pressed="false">
+                        <span class="material-symbols-outlined" aria-hidden="true">light_mode</span>
+                        <span class="js-theme-label">Dark mode</span>
+                    </button>
+                    <button type="button" class="mobile-tool js-dir-toggle" aria-pressed="false">
+                        <span class="dir-badge js-dir-short" aria-hidden="true">RTL</span>
+                        <span class="js-dir-label">Right-to-left</span>
+                    </button>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+  <!-- =======================================================
+       1. HERO — two-column: message + actions | signature piece
+  ======================================================== -->
+  <section class="hero-section hero-split">
+
+    <div class="hero-image" style="background-image:url('../assets/images/banner2.jpg');"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="bakery-container hero-content">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-6 hero-copy">
+          <p class="hero-kicker">Haute pâtisserie and bespoke celebration cakes</p>
+          <h1 class="display-lg hero-title">Edible Artistry for <span class="italic text-brown">Extraordinary</span> Moments</h1>
+          <p class="hero-description">
+            Bespoke cakes and luxury desserts, meticulously handcrafted to elevate your most cherished
+            celebrations. Experience the pinnacle of flavor and design.
+          </p>
+          <div class="hero-buttons">
+            <a href="Custom cake.html" class="btn btn-primary-custom">Begin Custom Order</a>
+            <a href="#collections" class="btn btn-secondary-custom">View Collections</a>
+          </div>
+          <ul class="hero-points">
+            <li><span class="material-symbols-outlined" aria-hidden="true">restaurant</span><span>Complimentary tasting</span></li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">draw</span><span>Hand-sketched design</span></li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">local_shipping</span><span>Delivered and set up</span></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hero-showcase">
+            <img class="hero-showcase-image" src="../assets/images/desgin1.jpg" alt="Tiered pink and blue celebration cake with sugar flowers">
+            <div class="hero-showcase-card">
+              <span class="offer-tag offer-tag--signature"><span class="material-symbols-outlined" aria-hidden="true">verified</span>Signature design</span>
+              <h2 class="hero-showcase-title">Midnight Bloom</h2>
+              <p class="hero-showcase-text">Three tiers of vanilla and raspberry, finished with hand-piped sugar blooms.</p>
+              <div class="hero-showcase-meta">
+                <span class="price">From $120</span>
+                <a href="#designers-choice" class="link-arrow">See bestsellers <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================
+       2. SIGNATURE COLLECTIONS
+  ======================================================== -->
+
+  <section id="collections" class="section-padding bg-cream offer-section">
+
+    <div class="bakery-container">
+
+      <div class="row align-items-end g-4 section-heading">
+
+        <div class="col-lg-7">
+
+          <span class="offer-marker offer-marker--signature"><span class="material-symbols-outlined" aria-hidden="true">verified</span>Signature collections</span>
+
+          <h2 class="heading-lg text-brown mb-0">
+            Our Signature
+            <br>
+            <span class="italic">
+              Collections
+            </span>
+          </h2>
+
+        </div>
+
+        <div class="col-lg-5">
+
+          <p class="body-md text-muted-custom mb-0">
+            Explore our carefully curated categories, each designed
+            to bring a touch of artisanal elegance to different occasions.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="row g-4">
+
+        <!-- Wedding -->
+
+        <div class="col-md-6 col-lg-3">
+
+          <a href="products.html" class="collection-card key-offer">
+
+            <img
+              alt="Elegant wedding cake"
+              src="../assets/images/cake1.jpg"
+            >
+
+            <div class="collection-gradient"></div>
+            <span class="offer-tag offer-tag--signature"><span class="material-symbols-outlined" aria-hidden="true">verified</span>Signature</span>
+
+            <div class="collection-content">
+
+              <h3 class="heading-md">
+                Wedding
+              </h3>
+
+              <p class="body-md">
+                Timeless elegance for your special day.
+              </p>
+
+              <div class="collection-explore">
+                Explore
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+              </div>
+
+            </div>
+
+          </a>
+
+        </div>
+
+
+        <!-- Designer -->
+
+        <div class="col-md-6 col-lg-3">
+
+          <a href="products.html" class="collection-card key-offer">
+
+            <img
+              alt="Designer modern cake"
+              src="../assets/images/cake2.jpg"
+            >
+
+            <div class="collection-gradient"></div>
+            <span class="offer-tag offer-tag--signature"><span class="material-symbols-outlined" aria-hidden="true">verified</span>Signature</span>
+
+            <div class="collection-content">
+
+              <h3 class="heading-md">
+                Designer
+              </h3>
+
+              <p class="body-md">
+                Avant-garde creations that make a statement.
+              </p>
+
+              <div class="collection-explore">
+                Explore
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+              </div>
+
+            </div>
+
+          </a>
+
+        </div>
+
+
+        <!-- Luxury -->
+
+        <div class="col-md-6 col-lg-3">
+
+          <a href="products.html" class="collection-card key-offer">
+
+            <img
+              alt="Luxury French pastries"
+              src="../assets/images/cake3.jpg">
+
+            <div class="collection-gradient"></div>
+            <span class="offer-tag offer-tag--signature"><span class="material-symbols-outlined" aria-hidden="true">verified</span>Signature</span>
+
+            <div class="collection-content">
+
+              <h3 class="heading-md">
+                Luxury Desserts
+              </h3>
+
+              <p class="body-md">
+                Petite masterpieces for refined palates.
+              </p>
+
+              <div class="collection-explore">
+                Explore
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+              </div>
+
+            </div>
+
+          </a>
+
+        </div>
+
+
+        <!-- Celebration -->
+
+        <div class="col-md-6 col-lg-3">
+
+          <a href="products.html" class="collection-card key-offer">
+
+            <img
+              alt="Celebration cake"
+              src="../assets/images/cake4.jpg"
+            >
+
+            <div class="collection-gradient"></div>
+            <span class="offer-tag offer-tag--signature"><span class="material-symbols-outlined" aria-hidden="true">verified</span>Signature</span>
+
+            <div class="collection-content">
+
+              <h3 class="heading-md">
+                Celebration
+              </h3>
+
+              <p class="body-md">
+                Joyful centerpieces for life's milestones.
+              </p>
+
+              <div class="collection-explore">
+                Explore
+                <span class="material-symbols-outlined">
+                  arrow_forward
+                </span>
+              </div>
+
+            </div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =======================================================
+       4. DESIGNER'S CHOICE — key offering (bestsellers)
+  ======================================================== -->
+  <section id="designers-choice" class="section-padding bg-surface offer-section">
+    <div class="bakery-container">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="offer-marker offer-marker--bestseller"><span class="material-symbols-outlined" aria-hidden="true">star</span>Most ordered this year</span>
+          <h2 class="heading-lg text-brown mb-0">Designer's <span class="italic">Choice</span></h2>
+          <p class="section-description">Our most requested designs. Each one can be resized and re-flavoured for your event.</p>
+        </div>
+        <a href="Custom cake.html" class="link-arrow">Start your own design <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="designer-card key-offer">
+            <div class="designer-image">
+              <img alt="Midnight Bloom cake" src="../assets/images/desgin1.jpg">
+              <span class="offer-tag offer-tag--bestseller"><span class="material-symbols-outlined" aria-hidden="true">star</span>Bestseller</span>
+            </div>
+            <div class="designer-body">
+              <div class="designer-head">
+                <h3 class="heading-md text-brown mb-0">Midnight Bloom</h3>
+                <span class="designer-price">From $120</span>
+              </div>
+              <p class="designer-text">Vanilla bean and raspberry tiers wrapped in hand-piped sugar blooms.</p>
+              <a href="Custom cake.html" class="link-arrow">Order this design <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="designer-card key-offer">
+            <div class="designer-image">
+              <img alt="Ethereal Vanilla cake" src="../assets/images/design2.jpg">
+              <span class="offer-tag offer-tag--signature"><span class="material-symbols-outlined" aria-hidden="true">verified</span>Signature</span>
+            </div>
+            <div class="designer-body">
+              <div class="designer-head">
+                <h3 class="heading-md text-brown mb-0">Ethereal Vanilla</h3>
+                <span class="designer-price">From $95</span>
+              </div>
+              <p class="designer-text">Madagascar vanilla sponge, blush buttercream and a sculpted sugar topper.</p>
+              <a href="Custom cake.html" class="link-arrow">Order this design <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="designer-card key-offer">
+            <div class="designer-image">
+              <img alt="Ruby dessert table" src="../assets/images/design3.jpg">
+              <span class="offer-tag offer-tag--featured"><span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>Featured</span>
+            </div>
+            <div class="designer-body">
+              <div class="designer-head">
+                <h3 class="heading-md text-brown mb-0">Ruby</h3>
+                <span class="designer-price">From $150</span>
+              </div>
+              <p class="designer-text">Red velvet layers with cream cheese frosting, styled as a full dessert table.</p>
+              <a href="Custom cake.html" class="link-arrow">Order this design <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================
+       7. FEATURED CREATIONS — key offering
+  ======================================================== -->
+  <section class="section-padding bg-cream offer-section">
+    <div class="bakery-container">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="offer-marker offer-marker--featured"><span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>Featured this month</span>
+          <h2 class="heading-lg text-brown mb-0">Featured <span class="italic">Creations</span></h2>
+        </div>
+        <a href="products.html" class="link-arrow">View gallery <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+      </div>
+      <div class="featured-grid">
+        <article class="featured-item large key-offer">
+          <img alt="The Marble Orchid cake" src="../assets/images/desin1.jpg">
+          <span class="offer-tag offer-tag--featured"><span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>Featured</span>
+          <div class="featured-overlay"></div>
+          <div class="featured-info">
+            <h3 class="heading-md text-white mb-1">The Marble Orchid</h3>
+            <p class="mb-0">Vanilla bean &amp; raspberry rose</p>
+          </div>
+        </article>
+        <article class="featured-item small key-offer">
+          <img alt="Stacked glazed pretzel twists" src="../assets/images/desin2.jpg">
+          <div class="featured-overlay"></div>
+          <div class="featured-info">
+            <h3 class="heading-md text-white mb-1">Glazed Pretzel Twists</h3>
+            <p class="mb-0">Weekend pastry boxes</p>
+          </div>
+        </article>
+        <article class="featured-item small key-offer">
+          <img alt="Rustic chic white cake" src="../assets/images/desin3.jpg">
+          <div class="featured-overlay"></div>
+          <div class="featured-info">
+            <h3 class="heading-md text-white mb-1">Rustic Chic</h3>
+            <p class="mb-0">Textured buttercream with fresh roses</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =======================================================
+       5. MASTER BEHIND THE ART
+  ======================================================== -->
+
+  <section class="section-padding bg-surface">
+
+    <div class="bakery-container">
+
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-5">
+
+          <div class="chef-image">
+
+            <img
+              alt="Head Pastry Chef"
+              src="../assets/images/Chef.jpg"
+            >
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-7">
+
+          <span class="eyebrow">
+            The Master Behind the Art
+          </span>
+
+          <h2 class="heading-lg text-brown mb-4">
+            Chef Julian
+            <span class="italic">
+              Laurent
+            </span>
+          </h2>
+
+          <blockquote class="chef-quote">
+            "Baking is a science, but cake design is pure poetry.
+            Every creation is a story waiting to be told through texture,
+            color, and unparalleled taste."
+          </blockquote>
+
+          <div class="signature">
+            J. Laurent
+          </div>
+          <a href="Custom cake.html" class="btn btn-primary-custom mt-4">Book a Design Consultation</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =======================================================
+       6. SWEET LEGACY
+  ======================================================== -->
+
+  <section class="section-padding bg-cream">
+
+    <div class="bakery-container">
+
+      <div class="text-center section-heading">
+
+        <h2 class="heading-lg text-brown mb-3">
+          A Sweet
+          <span class="italic">
+            Legacy
+          </span>
+        </h2>
+
+        <p class="body-md text-muted-custom mx-auto mb-0" style="max-width:680px;">
+          Three decades of passion, growth, and pushing the boundaries
+          of sugar art.
+        </p>
+
+      </div>
+
+
+      <div class="legacy-wrapper">
+
+        <div class="legacy-line"></div>
+
+        <div class="row g-4">
+
+          <div class="col-md-4">
+
+            <div class="legacy-item">
+
+              <div class="legacy-icon">
+                <span class="material-symbols-outlined">
+                  bakery_dining
+                </span>
+              </div>
+
+              <div class="legacy-year">
+                1994
+              </div>
+
+              <div class="legacy-title">
+                The First Oven
+              </div>
+
+              <p>
+                A humble beginning in a small downtown kitchen,
+                fueled by a family recipe and a dream.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4">
+
+            <div class="legacy-item">
+
+              <div class="legacy-icon">
+                <span class="material-symbols-outlined">
+                  palette
+                </span>
+              </div>
+
+              <div class="legacy-year">
+                2010
+              </div>
+
+              <div class="legacy-title">
+                Expanding the Palette
+              </div>
+
+              <p>
+                Introducing avant-garde sugar sculpting and international
+                flavor profiles to our repertoire.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4">
+
+            <div class="legacy-item">
+
+              <div class="legacy-icon">
+                <span class="material-symbols-outlined">
+                  workspace_premium
+                </span>
+              </div>
+
+              <div class="legacy-year">
+                Today
+              </div>
+
+              <div class="legacy-title">
+                Mastering Artistry
+              </div>
+
+              <p>
+                Recognized globally for bespoke creations that redefine
+                the boundaries of edible luxury.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =======================================================
+       3. DESIGN PROCESS
+  ======================================================== -->
+
+  <section class="section-padding bg-surface">
+
+    <div class="bakery-container">
+
+      <div class="text-center section-heading">
+
+        <span class="eyebrow">
+          The Journey
+        </span>
+
+        <h2 class="heading-lg text-brown mb-0">
+          From Vision to
+          <span class="italic">
+            Masterpiece
+          </span>
+        </h2>
+        <p class="section-description mt-3 mb-0">Five steps from first idea to the table. Most custom cakes need two to three weeks.</p>
+
+      </div>
+
+
+      <div class="process-wrapper">
+
+        <div class="process-line"></div>
+
+        <div class="row g-4">
+
+          <div class="col-md">
+
+            <div class="process-item">
+
+              <div class="process-number">
+                1
+              </div>
+
+              <h4>
+                Inspiration
+              </h4>
+
+              <p>
+                We begin with your ideas, moodboards, and dreams.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md">
+
+            <div class="process-item">
+
+              <div class="process-number">
+                2
+              </div>
+
+              <h4>
+                Flavor Profile
+              </h4>
+
+              <p>
+                       We talk flavours and taste samples, then agree servings, budget and date.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md">
+
+            <div class="process-item">
+
+              <div class="process-number">
+                3
+              </div>
+
+              <h4>
+                Design Sketch
+              </h4>
+
+              <p>
+                         Our designer sketches your cake and shares a finished concept for approval.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md">
+
+            <div class="process-item">
+
+              <div class="process-number">
+                4
+              </div>
+
+              <h4>
+                Artisan Baking
+              </h4>
+
+              <p>
+                       Your cake is baked and decorated by hand in the week of your event.
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md">
+
+            <div class="process-item">
+
+              <div class="process-number">
+                5
+              </div>
+
+              <h4>
+                 Delivery
+              </h4>
+
+              <p>       We deliver, set up and style the cake at your venue.
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+    <!-- =====================================================
+         CLOSING CTA (shared .closing-cta component)
+    ===================================================== -->
+    <section class="closing-cta" aria-labelledby="closing-cta-home2">
+        <div class="container-custom">
+            <div class="closing-cta-panel">
+
+                <img src="../assets/images/icon.png" alt="" class="closing-cta-mark" aria-hidden="true">
+
+                <div class="closing-cta-copy">
+                    <h2 id="closing-cta-home2" class="closing-cta-title">Let's design your centerpiece</h2>
+                    <p class="closing-cta-text">Tell us the date, the guest count and the feeling you want. We will send a sketch and a personalised quote within 48 hours.</p>
+                    <ul class="closing-cta-facts">
+                        <li><span class="material-symbols-outlined" aria-hidden="true">restaurant</span><span>Complimentary tasting</span></li>
+                        <li><span class="material-symbols-outlined" aria-hidden="true">draw</span><span>Hand-drawn sketch</span></li>
+                        <li><span class="material-symbols-outlined" aria-hidden="true">local_shipping</span><span>Delivery and setup</span></li>
+                    </ul>
+                </div>
+
+                <div class="closing-cta-actions">
+                    <a href="Custom cake.html" class="btn btn-primary-custom">Begin Custom Order</a>
+                    <a href="pricing.html" class="btn btn-secondary-custom">View Pricing</a>
+                    <p class="closing-cta-note">Allow 2–3 weeks notice for custom cakes</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer
+    id="contact"
+    class="site-footer"
+>
+
+    <div class="container-custom">
+
+        <div class="row g-5 mb-5">
+
+
+            <!-- BRAND -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <img
+                      src="../assets/images/white logo.png"
+                    alt="Sweet Moments Bakery Logo"
+                    class="footer-logo"
+                >
+
+                <p class="body-md footer-description mt-3">
+
+                    Crafting artisanal moments of sweetness since 1994. Every pastry tells a story of tradition and passion.
+
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Follow us on Instagram">
+                        <span class="material-symbols-outlined">
+                            photo_camera
+                        </span>
+                    </a>
+
+                    <a href="#" aria-label="Follow us on Facebook">
+                        <span class="material-symbols-outlined">
+                            thumb_up
+                        </span>
+                    </a>
+
+                    <a href="mailto:hello@sweetmomentsbakery.com" aria-label="Email us">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="col-lg-2 col-md-6">
+
+                <h4 class="footer-heading">
+                    Quick Links
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#">
+                            Our Story
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Bakeries
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Gift Cards
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Terms of Service
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4 class="footer-heading">
+                    Contact Info
+                </h4>
+
+                <ul class="footer-contact">
+
+                    <li>
+
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+
+                        <span>
+                            123 Baker St, Flour District, NY
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <span class="material-symbols-outlined">
+                            phone
+                        </span>
+
+                        <span>
+                            +1 (555) 123-4567
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <span class="material-symbols-outlined">
+                            schedule
+                        </span>
+
+                        <span>
+                            Mon-Sat: 7AM - 8PM
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4 class="footer-heading">
+                    Newsletter
+                </h4>
+
+                <p class="body-md footer-description mb-3">
+                    Join our sweet list for fresh updates.
+                </p>
+
+                <form>
+
+                    <input
+                        type="email"
+                        class="newsletter-input mb-2"
+                        placeholder="Your Email"
+                        aria-label="Your Email"
+                    >
+
+                    <button
+                        type="submit"
+                        class="btn btn-secondary-custom w-100 py-3 rounded-3 label-lg"
+                    >
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <div class="row align-items-center g-3">
+
+
+                <div class="col-md-6 text-center text-md-start">
+
+                    © 2026 Sweet Moments Bakery.
+                    Handcrafted with love.
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="d-flex justify-content-center justify-content-md-end gap-4">
+
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#">
+                            Cookies
+                        </a>
+
+                        <a href="#">
+                            Sitemap
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- =========================================================
+     DARK MODE JAVASCRIPT
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* ---------------------------------------------------------
+       ELEMENTS
+    --------------------------------------------------------- */
+
+    const themeToggle =
+        document.getElementById("themeToggle");
+
+    const themeIcon =
+        document.getElementById("themeIcon");
+
+
+    /* ---------------------------------------------------------
+       CHECK SAVED THEME
+    --------------------------------------------------------- */
+
+    const savedTheme =
+        localStorage.getItem("sweetMomentsTheme");
+
+
+    /* ---------------------------------------------------------
+       LOAD DARK MODE IF SAVED
+    --------------------------------------------------------- */
+
+    if (savedTheme === "dark") {
+
+        document.body.classList.add("dark-mode");
+
+        themeIcon.textContent = "dark_mode";
+
+        themeToggle.setAttribute(
+            "aria-label",
+            "Switch to light mode"
+        );
+
+        themeToggle.setAttribute(
+            "title",
+            "Switch to light mode"
+        );
+
+    }
+
+
+    /* ---------------------------------------------------------
+       THEME TOGGLE
+    --------------------------------------------------------- */
+
+    themeToggle.addEventListener("click", function () {
+
+
+        /* Toggle dark mode */
+
+        document.body.classList.toggle("dark-mode");
+
+
+        /* Check current mode */
+
+        const isDark =
+            document.body.classList.contains("dark-mode");
+
+
+        /* -----------------------------------------------------
+           DARK MODE
+        ----------------------------------------------------- */
+
+        if (isDark) {
+
+            themeIcon.textContent = "dark_mode";
+
+            themeToggle.setAttribute(
+                "aria-label",
+                "Switch to light mode"
+            );
+
+            themeToggle.setAttribute(
+                "title",
+                "Switch to light mode"
+            );
+
+            localStorage.setItem(
+                "sweetMomentsTheme",
+                "dark"
+            );
+
+        }
+
+
+        /* -----------------------------------------------------
+           LIGHT MODE
+        ----------------------------------------------------- */
+
+        else {
+
+            themeIcon.textContent = "light_mode";
+
+            themeToggle.setAttribute(
+                "aria-label",
+                "Switch to dark mode"
+            );
+
+            themeToggle.setAttribute(
+                "title",
+                "Switch to dark mode"
+            );
+
+            localStorage.setItem(
+                "sweetMomentsTheme",
+                "light"
+            );
+
+        }
+
+    });
+
+});
+
+</script>
+
+<script src="../assets/js/site.js"></script>
+
+</body>
+</html>
