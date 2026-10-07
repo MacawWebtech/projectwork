@@ -1,0 +1,208 @@
+/* =========================================================================
+   SWEET MOMENTS BAKERY
+   Dark-mode stylesheet. Load AFTER main.css.
+   Toggled by the existing JS which adds/removes body.dark-mode (see the
+   inline script at the bottom of each page) and remembers the choice in
+   localStorage under "sweetMomentsTheme".
+
+   MODEL: --primary/--secondary/--tertiary and their --on-* pairs invert
+   together as matched sets (each pair keeps its own contrast valid in
+   both themes), which is what the vast majority of the site relies on —
+   headings, hover accents, footer labels, etc. all use var(--primary) as
+   general ink color against whatever surface they sit on.
+
+   The exception is a small set of self-contained "branded panels" (the
+   custom-cake CTA section, gradient badges, primary buttons, the featured
+   pricing card) that are meant to look identically branded regardless of
+   theme — a dark espresso panel with white text shouldn't flip to a light
+   panel with dark text just because the rest of the page went dark. Those
+   specific components use the separate --panel-bg / --panel-gradient /
+   --panel-text tokens defined once in main.css's :root and never
+   overridden here, so they stay constant across both themes by design.
+========================================================================= */
+
+body.dark-mode {
+
+  /* ---- surfaces ---- */
+  --background: #18120E;
+  --surface: #211A15;
+  --cream: #18120E;
+  --surface-bright: #30251E;
+  --surface-dim: #15100C;
+  --surface-tint: #C7A995;
+  --surface-variant: #40352D;
+  --surface-container-lowest: #15100C;
+  --surface-container-low: #211913;
+  --surface-low: #211913;
+  --surface-container: #2B211B;
+  --surface-container-high: #342820;
+  --surface-container-highest: #403229;
+
+  /* ---- ink / text ---- */
+  --on-background: #F5EEE7;
+  --on-surface: #F5EEE7;
+  --text: #F5EEE7;
+  --text-dark: #F5EEE7;
+  --on-surface-variant: #D1C3B8;
+  --muted: #D1C3B8;
+  --text-muted: #D1C3B8;
+  --outline: #9B8A7E;
+  --outline-variant: #57483E;
+  --border: #57483E;
+
+  /* ---- primary : warm parchment (pops on dark espresso) ---- */
+  --primary: #F0D5C1;
+  --brown: #F0D5C1;
+  --brown-soft: #DEC1AF;
+  --primary-container: #30231B;
+  --primary-fixed: #FBDDCA;
+  --primary-fixed-dim: #DEC1AF;
+  --primary-light: #FBDDCA;
+  --on-primary: #24170F;
+  --on-primary-container: #D9BCA8;
+  --on-primary-fixed-variant: #574335;
+  --inverse-primary: #705A4C;
+
+  /* ---- secondary : warm caramel ---- */
+  --secondary: #D99B62;
+  --gold: #D99B62;
+  --secondary-container: #624325;
+  --secondary-fixed: #FFDCBD;
+  --secondary-fixed-dim: #F0BD8B;
+  --on-secondary: #25170D;
+  --on-secondary-container: #FFD9B2;
+  --on-secondary-fixed: #2C1600;
+
+  /* ---- tertiary : deep wine accent ---- */
+  --tertiary: #D99B62;
+  --tertiary-container: #452627;
+  --tertiary-fixed: #FFDAD9;
+  --tertiary-fixed-dim: #ECBABA;
+  --on-tertiary: #FFFFFF;
+  --on-tertiary-fixed: #2F1314;
+  --on-tertiary-container: #B88B8B;
+
+  /* ---- error ---- */
+  --error: #FFB4AB;
+  --error-container: #93000A;
+  --on-error: #690005;
+
+  /* ---- inverse ---- */
+  --inverse-surface: #F5EEE7;
+  --inverse-on-surface: #30251E;
+
+  /* ---- shadows read better stronger/darker on a dark canvas ---- */
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, .45);
+  --shadow-strong: 0 22px 55px rgba(0, 0, 0, .55);
+
+  /* NOTE: --panel-bg, --panel-gradient and --panel-text are deliberately
+     NOT set here — see the file header. They stay fixed at their :root
+     (main.css) values in both themes. */
+}
+
+body.dark-mode {
+  background-color: var(--background);
+  color: var(--on-background);
+}
+
+/* =========================================================================
+   Targeted overrides for elements that use hard-coded, light-only
+   rgba() backgrounds in main.css (frosted headers, decorative glows,
+   translucent status/quote panels). Everything else in main.css already
+   re-themes automatically because it reads the variables above.
+========================================================================= */
+
+body.dark-mode .main-header,
+body.dark-mode .main-navbar,
+body.dark-mode .site-header {
+  background: rgba(24, 18, 14, .94) !important;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, .35) !important;
+}
+
+body.dark-mode .desktop-nav .dropdown-menu {
+  background: var(--surface-container) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .4) !important;
+}
+
+body.dark-mode .hero-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(24, 18, 14, .96) 0%,
+    rgba(24, 18, 14, .80) 45%,
+    rgba(24, 18, 14, .30) 72%,
+    rgba(24, 18, 14, 0) 100%
+  ) !important;
+}
+
+@media (max-width: 767.98px) {
+  body.dark-mode .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(24, 18, 14, .95) 0%,
+      rgba(24, 18, 14, .82) 55%,
+      rgba(24, 18, 14, .40) 100%
+    ) !important;
+  }
+}
+
+body.dark-mode .map-status,
+body.dark-mode .detail-badge {
+  background: rgba(43, 33, 27, .92) !important;
+  color: var(--on-surface) !important;
+}
+
+body.dark-mode .mission-card {
+  background: rgba(33, 25, 19, .6) !important;
+}
+
+body.dark-mode .checker-card::after,
+body.dark-mode .hero-section::before,
+body.dark-mode .zone-decoration,
+body.dark-mode .option-icon,
+body.dark-mode .blur-circle-one,
+body.dark-mode .blur-circle-two,
+body.dark-mode .cta-circle {
+  background: rgba(48, 35, 27, .45) !important;
+}
+
+body.dark-mode .map-image,
+body.dark-mode .map-box {
+  filter: brightness(.75) saturate(1.05);
+}
+
+body.dark-mode img {
+  filter: brightness(.94);
+}
+
+body.dark-mode .story-image,
+body.dark-mode .baker-image img,
+body.dark-mode .chef-image img,
+body.dark-mode .package-image img,
+body.dark-mode .product-image img,
+body.dark-mode .collection-card img,
+body.dark-mode .featured-item img {
+  filter: brightness(.85);
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode .newsletter-input,
+body.dark-mode .custom-input,
+body.dark-mode .custom-textarea,
+body.dark-mode .custom-select,
+body.dark-mode .postal-input {
+  background: var(--surface-container-low) !important;
+  color: var(--on-surface) !important;
+  border-color: var(--outline-variant) !important;
+}
+
+body.dark-mode .vertical-text {
+  color: var(--outline);
+}
+
+body.dark-mode .material-symbols-outlined {
+  color: inherit;
+}
+body.dark-mode .options-section {
+  background-color: #211A15 !important;
+}
